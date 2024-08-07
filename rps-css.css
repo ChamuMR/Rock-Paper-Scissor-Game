@@ -18,7 +18,7 @@ img{
  }
  p{
     margin-left:60px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 20px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -27,17 +27,13 @@ img{
  }
  .reset-button{
     margin-left: 60px;
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight:600;
-    padding: 15px;
     width: 150px;
-    height: 75px;
-    border-radius:25px;
-    border-color: black ;
-    border-width: 1px solid;
-    background-color: white;
+    height: 55px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border:1px solid black;
  }
  h1{
    color: white;
