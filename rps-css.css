@@ -1,0 +1,47 @@
+body{
+   background-color: black;
+}
+.rock-button, .paper-button, .scissors-button{
+   width: 120px;
+   height: 120px;  
+   margin-left: 30px;
+   background-color: black;
+   border-radius: 50%;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   border: 3px solid white;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+ }
+ p{
+    margin-left:60px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+ }
+ .reset-button{
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    padding: 15px;
+    width: 150px;
+    height: 75px;
+    border-radius:25px;
+    border-color: black ;
+    border-width: 1px solid;
+    background-color: white;
+ }
+ h1{
+   color: white;
+ }
+ button{
+    cursor: pointer;
+ }

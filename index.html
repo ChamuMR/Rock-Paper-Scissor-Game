@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="rps.css">
 </head>
 <body>
-    <button onclick="playGame('Rock')" class="rock-button"><img src="rock-emoji.png"></button>
-    <button onclick="playGame('Paper')" class="paper-button"><img src="paper-emoji.png"></button>
-    <button onclick="playGame('Scissors')" class="scissors-button"><img src="scissors-emoji.png"></button>
+    <h1>Rock Paper Scissors Game</h1>
+    <button onclick="playGame('Rock')" class="rock-button"><img src="Rock-emoji.png"></button>
+    <button onclick="playGame('Paper')" class="paper-button"><img src="Paper-emoji.png"></button>
+    <button onclick="playGame('Scissors')" class="scissors-button"><img src="Scissors-emoji.png"></button>
 
     <p class="js-result"></p>
     <p class="js-moves"></p>
@@ -22,84 +23,8 @@
         updateScoreElement();
         
     " class="reset-button">Reset Score</button>
-    <script>
-        let score = JSON.parse(localStorage.getItem('score')) || {
-            Wins:0,
-            loses:0,
-            Tie:0
-        }
+    <script src="rps.js">
         
-        
-        function playGame(playerPick){
-            const systemMove = computerPick();
-
-            let result = '';
-
-            if(playerPick === 'Rock'){
-                if(systemMove === 'Rock'){
-                    result = 'Tie';
-                }
-                else if(systemMove === 'Paper'){
-                    result = 'Loss';
-                }
-                else if(systemMove === 'Scissors'){
-                    result = 'Won';
-                }
-            }else if (playerPick === 'Paper'){
-                if(systemMove === 'Rock'){
-                    result = 'Won';
-                }
-                else if(systemMove === 'Paper'){
-                    result = 'Tie';
-                }
-                else if(systemMove === 'Scissors'){
-                    result = 'Loss';
-                }
-            }else if(playerPick === 'Scissors'){
-                if(systemMove === 'Rock'){
-                    result = 'Loss';
-                }
-                else if(systemMove === 'Paper'){
-                    result = 'Won';
-                }
-                else if(systemMove === 'Scissors'){
-                    result = 'Tie';
-                }
-            }
-            if(result === 'Won'){
-                score.Wins++;
-            }else if(result === 'Loss'){
-                score.loses++;
-            }else if(result === 'Tie'){
-                score.Tie++;
-            }
-            localStorage.setItem('score',JSON.stringify(score));
-            updateScoreElement();
-            document.querySelector('.js-result').innerHTML = `You ${result}`;
-            document.querySelector('.js-moves').innerHTML = `You picked ${playerPick}, Computer picked ${systemMove}`;
-    
-      }
-      function updateScoreElement(){
-        document.querySelector('.js-score').innerHTML = `Wins: ${score.Wins}, Losses: ${score.loses}, Ties: ${score.Tie}`;
-      }
-
-
-        
-        function computerPick(){
-            const randomNumber = Math.floor(Math.random()*3);
-            let computerMove = '';
-            if(randomNumber === 0){
-                computerMove = 'Rock';
-            }
-            else if(randomNumber === 1){
-                computerMove = 'Paper';
-            }
-            else if(randomNumber === 2){
-                computerMove = 'Scissors';
-            }
-            return computerMove;
-        }
-    
     </script>
 </body>
 </html>
