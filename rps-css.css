@@ -1,0 +1,47 @@
+body{
+   background-color: black;
+}
+.rock-button, .paper-button, .scissors-button{
+   width: 120px;
+   height: 120px;  
+   margin-left: 30px;
+   background-color: black;
+   border-radius: 50%;
+   margin-top: 50px;
+   margin-bottom: 30px;
+   border: 3px solid white;
+}
+.js-result{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+}
+img{
+    width: 70px;
+    height: 70px;
+ }
+ p{
+    margin-left:60px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+ }
+ .reset-button{
+    margin-left: 60px;
+    width: 150px;
+    height: 55px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border:1px solid black;
+ }
+ h1{
+   color: white;
+ }
+ button{
+    cursor: pointer;
+ }
